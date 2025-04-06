@@ -2,9 +2,13 @@
 
 An intelligent recommender system that suggests the most relevant assessments to hiring managers based on the roles they are hiring for.
 
+- ![Screenshot 2025-04-07 004724](https://github.com/user-attachments/assets/2dcfb931-7e2f-4348-a1a0-8e8d50b9bb0c)
+  
 ---
 
+
 ## 🔍 Project Overview
+
 
 This project aims to streamline the hiring process by recommending contextually appropriate assessments from SHL using machine learning and automation. It includes:
 
@@ -12,11 +16,17 @@ This project aims to streamline the hiring process by recommending contextually 
 - 📊 **TF-IDF-Based Recommendation Engine**: Uses Natural Language Processing (NLP) techniques to retrieve the top 10 related assessments, followed by LLM-based re-ranking to recommend assessments tailored to job role descriptions.
 - 🚀 **FastAPI Backend**: Powers scalable and fast REST APIs for retrieving recommendations.
 - 💡 **Streamlit Frontend**: Provides an intuitive and interactive UI for hiring managers to explore the suggested assessments.
+  
+- ![Screenshot 2025-04-07 004850](https://github.com/user-attachments/assets/30afc354-1569-4d73-9493-795e3f71746a)
+
 
 ---
 
+
 ## 📁 Folder Structure
 
+
+```
 shl-assessment-recommender/
 ├── app.py # Streamlit frontend application
 ├── api.py # FastAPI backend server
@@ -28,8 +38,9 @@ shl-assessment-recommender/
 │
 ├── requirements.txt # Python package dependencies
 └── README.md # Project documentation
-
+```
 ---
+
 
 ## 🚀 Getting Started
 
@@ -53,6 +64,8 @@ To launch the Streamlit frontend (automatically connects to the backend):
 ```bash
 streamlit run app.py
 ```
+
+
 ## 📌 Technologies Used
 
 - FastAPI – High-performance web framework for building APIs
@@ -60,6 +73,7 @@ streamlit run app.py
 - scikit-learn – Machine Learning and TF-IDF vectorization
 - pandas – Data processing and manipulation
 - Selenium – Web scraping SHL assessment data
+- Gemini (LLM) – Re-ranking retrieved assessments to align with job role descriptions
 
 ## Contact
 
