@@ -9,7 +9,7 @@ An intelligent recommender system that suggests the most relevant assessments to
 This project aims to streamline the hiring process by recommending contextually appropriate assessments from SHL using machine learning and automation. It includes:
 
 - 🔄 **Automated Web Scraping**: Extracts up-to-date assessment data directly from SHL website using Selenium.
-- 📊 **TF-IDF-Based Recommendation Engine**: Uses Natural Language Processing (NLP) techniques to recommend assessments tailored to job role descriptions.
+- 📊 **TF-IDF-Based Recommendation Engine**: Uses Natural Language Processing (NLP) techniques to retrieve the top 10 related assessments, followed by LLM-based re-ranking to recommend assessments tailored to job role descriptions.
 - 🚀 **FastAPI Backend**: Powers scalable and fast REST APIs for retrieving recommendations.
 - 💡 **Streamlit Frontend**: Provides an intuitive and interactive UI for hiring managers to explore the suggested assessments.
 
@@ -40,19 +40,19 @@ Activate your environment:
 ```bash
 shl/scripts/activate
 
-Or
 ```
+or
 
 Install the required dependencies directly:
-
+```bash
 pip install -r requirements.txt
-
+```
 ### 1. 🔧 Run the Application
 
 To launch the Streamlit frontend (automatically connects to the backend):
-
+```bash
 streamlit run app.py
-
+```
 ## 📌 Technologies Used
 
 - FastAPI – High-performance web framework for building APIs
